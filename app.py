@@ -65,8 +65,8 @@ def user_input(user_question):
 
 
 def main():
-    st.set_page_config("Chat PDF")
-    st.header("Let's Chat with PDF")
+    st.set_page_config("Gremadex")
+    # st.header("Let's Chat with PDF")
 
     st.markdown("""
     <style>
@@ -97,7 +97,7 @@ def main():
     button_name = None
 
     with st.sidebar:
-        st.title("Menu:")
+        st.title("Gremadex")
         pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
         if st.button("Submit & Process"):
             if pdf_docs:
